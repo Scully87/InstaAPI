@@ -9,7 +9,7 @@ set :public_folder, Proc.new { File.join(root, '..', 'public') }
 
 enable :sessions
 
-CALLBACK_URL = "http://localhost:9292"
+CALLBACK_URL = "http://localhost:9292/oauth/callback"
 
 Instagram.configure do |config|
   config.client_id = ENV['INSTA_CLIENT_ID']
