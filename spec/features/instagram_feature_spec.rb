@@ -1,8 +1,11 @@
 require 'spec_helper'
 
-  describe 'Instgram' do
-    it 'should validate types' do
-      get 'http://example.com/api/v1/simple_get' #json api that returns { "name" : "John Doe" }
-      expect_json_types({name: :string})
+feature 'Instgram' do
+  context 'Connecting' do
+
+    scenario 'should display a link to connect to instagram' do
+      visit '/'
+      expect(page).to have_link 'Connect With Instagram'
     end
   end
+end
