@@ -1,3 +1,3 @@
-get "/nav" do
+get '/nav' do
   erb :nav
 end
