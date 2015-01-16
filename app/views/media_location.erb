@@ -1,0 +1,4 @@
+<h1>Search for a location by lat/lng with a radius of 5000m</h1>
+  <% for @location in @client.location_search("51.5124746","-0.0980745", "17z") %>
+"<li><%= @location.name %><a href='https://www.google.com/maps/preview/#{@location.latitude},#{@location.longitude},17z'>Map</a></li>"
+  <% end %>
