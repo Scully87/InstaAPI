@@ -1,0 +1,11 @@
+<h1><%= @user.username %>'s media feed</h1>
+
+  <h2>Page 1</h2><br/>
+  <% for @media_item in @page_1 %>
+    <img src='<%= @media_item.images.thumbnail.url %>'>
+  <% end %>
+
+  <h2>Page 2</h2><br/>
+  <% for @media_item in @page_2 %>
+    <img src='<%= @media_item.images.thumbnail.url %>'>
+  <% end %>

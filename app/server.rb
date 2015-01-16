@@ -6,8 +6,9 @@ require 'dotenv'
 require_relative 'controllers/application'
 require_relative 'controllers/oauth'
 require_relative 'controllers/nav'
-require_relative 'controllers/recent_media'
+require_relative 'controllers/recent_uploads'
 require_relative 'controllers/likes'
+require_relative 'controllers/recent_feed'
 
 Dotenv.load
 
@@ -22,3 +23,4 @@ Instagram.configure do |config|
   config.client_id = ENV['INSTA_CLIENT_ID']
   config.client_secret = ENV['INSTA_CLIENT_SECRET']
 end
+
