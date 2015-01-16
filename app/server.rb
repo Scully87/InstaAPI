@@ -7,6 +7,7 @@ require_relative 'controllers/application'
 require_relative 'controllers/oauth'
 require_relative 'controllers/nav'
 require_relative 'controllers/recent_media'
+require_relative 'controllers/likes'
 
 Dotenv.load
 
